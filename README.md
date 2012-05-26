@@ -30,10 +30,12 @@ In your controller or your controller root
 
 Then you can use those methods if needed :
 
-Refers to the lang code in URL
+Refers to the current lang code
+	
 	$lang = $this->kitlang->get_lang();
 
-Refers to the language directory name in application/language
+Refers to the current language directory name in application/language
+	
 	$language = $this->kitlang->get_language();
 
 ##helpers
