@@ -39,15 +39,19 @@ Then you can use those if needed
 ##helpers
 You can use those helpers in your application once kitlang has detected the current lang code.
 
-	// Build the current URL adding the lang code $lang as the first segment. 
-	
-		$url_lang = switch_lang($lang);
+###switch_lang()
 
-	// Override site_url() helper building the URL automatically with the current lang code
+> Build the current URL adding the lang code $lang as the first segment. 
 	
-		$url_lang = site_url(controller/action);
+	$url_lang = switch_lang($lang);
 
-	// Fallback to default behaviour
+###site_url()
+
+> Override site_url() helper building the URL automatically with the current lang code
+	
+	$url_lang = site_url(controller/action);
+
+> Fallback to default behaviour
 	
 		$url_without_lang = site_url(controller/action, true);
 
