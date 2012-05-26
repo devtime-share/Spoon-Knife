@@ -41,11 +41,13 @@ Refers to the current language directory name in application/language
 ##helpers  
 
 __switch_lang()__
+
 Build the current URL adding the lang code $lang as the first segment. 
 	
 	$url_lang = switch_lang($lang);
 
 __site_url()__
+
 Override site_url() helper building the URL automatically with the current lang code.
 	
 	$url_lang = site_url(controller/action);
