@@ -38,8 +38,7 @@ Refers to the current language directory name in application/language
 	
 	$language = $this->kitlang->get_language();
 
-##helpers
-You can use those helpers in your application once kitlang has detected the current lang code.
+##helpers  
 
 ###switch_lang()
 Build the current URL adding the lang code $lang as the first segment. 
@@ -47,7 +46,7 @@ Build the current URL adding the lang code $lang as the first segment.
 	$url_lang = switch_lang($lang);
 
 ###site_url()
-Override site_url() helper building the URL automatically with the current lang code
+Override site_url() helper building the URL automatically with the current lang code.
 	
 	$url_lang = site_url(controller/action);
 
